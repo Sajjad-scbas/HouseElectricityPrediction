@@ -1,0 +1,28 @@
+name: ramp-electricity-prediction
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - scikit-learn>=0.22
+  - pandas
+  - matplotlib
+  - seaborn
+
+  # Extra requirements (to be modified
+  #  depending on participants' needs):
+  # - lightgbm
+  # - click
+
+  - pip
+  - pip:
+    - osfclient
+    - ramp-workflow
+    - ramp-utils
+    - download
+
+
+#     Extra requirements pip
+#     - xgboost
+#     - catboost
+#     - zipfile
