@@ -30,6 +30,17 @@ def categorical_col_process(df):
     df_changed.drop(columns=col, inplace=True)
     return df_changed
 
+def mean_filling_values(df):
+    """
+    A function to fill na values present in RH_6 and Visibility 
+    feautures with mean values
+    """
+    df_imputed = df.copy()
+    # Fill in the missing values with the mean of each column
+    df_imputed['RH_6'].fillna(df_imputed['RH_6'].mean(), inplace=True)
+    df_imputed['Visibility'].fillna(df_imputed['Visibility'].mean(), inplace=True)
+    return df_imputed
+
 
 class FeatureExtractor(BaseEstimator):
     """
@@ -40,6 +51,7 @@ class FeatureExtractor(BaseEstimator):
 
     def transform(self, X):
         X = categorical_col_process(X) 
+        X = mean_filling_values(X)
         return 
 
 

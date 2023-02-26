@@ -38,6 +38,8 @@ Get started with the [dedicated notebook](Starting_kit.ipynb). It contains the f
   - Missing Values
     
 3. Workflow
+  - Baselines 
+  - Feature Importance Using Shap
 
 4. Submission details
 
