@@ -10,8 +10,8 @@ from sklearn.linear_model import LinearRegression
 def categorical_col_process(df):
     """
     A sample function to ransform categorial 
-    feautures ['WeekStatus', 'Day_of_week', 'DayType', 'InstantF'] 
-    to numeric feautures
+    features ['WeekStatus', 'Day_of_week', 'DayType', 'InstantF'] 
+    to numeric features
     """ 
     df_changed = df.copy()
     col = ['WeekStatus', 'Day_of_week', 'DayType', 'InstantF']
@@ -33,7 +33,7 @@ def categorical_col_process(df):
 def mean_filling_values(df):
     """
     A function to fill na values present in RH_6 and Visibility 
-    feautures with mean values
+    features with mean values
     """
     df_imputed = df.copy()
     # Fill in the missing values with the mean of each column

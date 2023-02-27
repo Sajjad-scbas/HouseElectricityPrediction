@@ -30,8 +30,8 @@ Get started with the [dedicated notebook](Starting_kit.ipynb). It contains the f
    
 
 2. Data Exploration
-  - Feautures Explanation 
-  - Feautures Exploration
+  - Features Explanation 
+  - Features Exploration
 
 3. Data pre-processing
   - Categorical Features
@@ -39,7 +39,7 @@ Get started with the [dedicated notebook](Starting_kit.ipynb). It contains the f
     
 3. Workflow
   
-  
+
 4. Submission details
 
 5. RAMP submission
