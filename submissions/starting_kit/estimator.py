@@ -52,7 +52,7 @@ class FeatureExtractor(BaseEstimator):
     def transform(self, X):
         X = categorical_col_process(X) 
         X = mean_filling_values(X)
-        return 
+        return X
 
 
 
